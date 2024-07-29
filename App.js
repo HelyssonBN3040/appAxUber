@@ -1,5 +1,4 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View, TextInput, TouchableOpacity, ScrollView } from 'react-native';
+import { StyleSheet, Text, View, TextInput, TouchableOpacity, ScrollView, StatusBar} from 'react-native';
 import AsyncStorage from "@react-native-async-storage/async-storage";
 import { useEffect, useState } from 'react';
 
@@ -66,8 +65,11 @@ export default function App() {
 
   return (
     <View style={styles.container}>
+      <StatusBar
+        hidden={false} // set to true to hide the status bar
+      />
       <View>
-        <Text style={{ fontSize: 26, marginTop: 80, fontWeight: "600" }}>Bem-Vindo</Text>
+        <Text style={{ fontSize: 26, marginTop: 30, fontWeight: "600" }}>Bem-Vindo</Text>
       </View>
       <View style={styles.containerValue}>
         <View style={styles.containerBox}>
