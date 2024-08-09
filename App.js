@@ -66,7 +66,7 @@ export default function App() {
   return (
     <View style={styles.container}>
       <StatusBar
-        hidden={false} // set to true to hide the status bar
+        hidden={true} // set to true to hide the status bar
       />
       <View>
         <Text style={{ fontSize: 26, marginTop: 30, fontWeight: "600" }}>Bem-Vindo</Text>
